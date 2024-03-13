@@ -1,0 +1,144 @@
+/* general */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+
+}
+
+section {
+  background-color: lightsalmon;
+}
+
+/* header */
+
+nav {
+  background-color: darkcyan;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 1rem 3rem;
+}
+
+nav a {
+  color: lightsalmon;
+  text-decoration: none;
+}
+
+/* bar */
+
+.bar {
+  height: 30rem;
+}
+
+.bar {
+  display: flex;
+}
+
+.title {
+  color: salmon;
+  background-color: saddlebrown;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  padding: 2rem;
+  align-self: center;
+}
+
+/* intro */
+
+.intro {
+  height: 9rem;
+}
+
+.intro h3,
+.intro h4 {
+  margin-left: 1rem;
+}
+.intro h3 {
+  color: yellow;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro h4 {
+  color: white;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  width: 70%;
+}
+
+.intro a {
+  display: inline;
+}
+
+/* photos */
+
+.photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25rem;
+}
+
+.photos figure {
+  width: 30%;
+}
+
+.photos figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* testimonial */
+
+.testimonial {
+  background-color: lightseagreen;
+  height: 20rem;
+  color: yellow;
+}
+
+.testimonial h1,
+.testimonial p {
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
+.testimonial h1 {
+  font-size: 2.8rem;
+}
+
+/* cta */
+
+.cta {
+  height: 65rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta h1 {
+  color: yellow;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.cta figure {
+  width: 50%;
+}
+
+.cta figure img {
+  width: 100%;
+  height: auto;
+}
