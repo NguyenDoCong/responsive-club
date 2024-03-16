@@ -8,7 +8,11 @@
   font-size: 16px;
   display: block;
   font-weight: 400;
+  clear: inline;
+}
 
+body {
+  /* width: 100%; */
 }
 
 section {
@@ -35,6 +39,30 @@ nav a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1048px) {
+  nav a {
+    font-size: 1rem;
+
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  nav a {
+    font-size: 0.8rem;
+
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  nav li {
+    margin: 1rem;
+  }
+  nav a {
+    font-size: 0.7rem;
+
+  }
+}
+
 /* bar */
 
 .bar {
@@ -53,6 +81,26 @@ nav a {
   font-size: 2rem;
   padding: 2rem;
   align-self: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .bar {
+    height: 20rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bar {
+    height: 15rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
 }
 
 /* intro */
@@ -82,6 +130,56 @@ nav a {
   display: inline;
 }
 
+@media only screen and (max-width: 1048px) {
+  .intro {
+    height: 8rem;
+    padding-bottom: 2rem;
+
+  }
+
+  .intro h3 {
+    font-size: 1.5rem;
+  }
+  .intro h4 {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .intro {
+    height: 8rem;
+    padding-bottom: 2rem;
+
+  }
+
+  .intro h3 {
+    font-size: 1.5rem;
+  }
+  .intro h4 {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro {
+    height: 10rem;
+  }
+
+  .intro h3,
+  .intro h4 {
+    margin-left: 0.5rem;
+  }
+  .intro h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .intro h4 {
+    width: 90%;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
 /* photos */
 
 .photos {
@@ -100,6 +198,47 @@ nav a {
   height: auto;
 }
 
+@media only screen and (max-width: 1048px) {
+  .photos {
+    flex-direction: column;
+    height: 120rem;
+    justify-content: center;
+  }
+  .photos figure {
+    width: 100%;
+    margin: .8rem;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  .photos {
+    flex-direction: column;
+    height: 92rem;
+    justify-content: center;
+  }
+  .photos figure {
+    margin: .8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .photos {
+    flex-direction: column;
+    height: 45rem;
+    justify-content: center;
+  }
+  .photos figure {
+    margin: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .photos figure {
+    width: 100%;
+  }
+}
+
 /* testimonial */
 
 .testimonial {
@@ -116,6 +255,58 @@ nav a {
 
 .testimonial h1 {
   font-size: 2.8rem;
+}
+
+@media only screen and (max-width: 1048px) {
+  .testimonial {
+    height: 14rem;
+  }
+
+  .testimonial h1 {
+    font-size: 2.3rem;
+  }
+
+  .testimonial p {
+    padding-top: 1rem;
+
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  .testimonial {
+    height: 14rem;
+  }
+
+  .testimonial h1 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial p {
+    padding-top: 0.8rem;
+
+    font-size: .8rem;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .testimonial {
+    height: 8rem;
+  }
+  .testimonial h1,
+  .testimonial p {
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+  }
+  .testimonial h1 {
+    font-size: 1rem;
+  }
+
+  .testimonial p {
+    font-size: 0.5rem;
+  }
 }
 
 /* cta */
@@ -141,4 +332,34 @@ nav a {
 .cta figure img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 1048px) {
+  .cta {
+    height: 45rem;
+  }
+
+  .cta h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cta {
+    height: 33rem;
+  }
+
+  .cta h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .cta {
+    height: 20rem;
+  }
+
+  .cta h1 {
+    font-size: 1.2rem;
+  }
 }
